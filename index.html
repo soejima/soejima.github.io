@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        body.pt :lang(en) {
+          display: none;
+        }
+        body.en :lang(pt) {
+          display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+      function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+    </script>
+
     <title>Henrique Soejima</title>
   </head>
   <body>
+  <button lang="pt" onclick="document.body.className='en'">Switch to English</button>
+  <button lang="en" onclick="document.body.className='pt'">Em Português</button>
   <h1>Henrique Tatsuyuki Soejima</h1>
   <p>
     <a href="http://www.deltahumano.com.br" alt="Delta Humano - Apenas mais um tentando fazer a diferença..."><img src="img/delta-humano-logo.png" height="50" /></a>
@@ -15,14 +39,25 @@
     &nbsp;<a href="https://www.facebook.com/soejima" alt="Facebook"><img src="img/facebook.png" height="50" /></a>
     &nbsp;<a href="https://www.youtube.com/htsoejima" alt="YouTube"><img src="img/youtube.png" height="50" /></a>
   </p>
-  <p>
-    39 anos. Casado. Pai de 3 (quase 4).
-  </p>
-  <p>
-    Engenheiro de Computação (POLI-USP, 2005), atualmente cursando Licenciatura em Matemática (UNIVESP)
-  </p>
-  <p>
 
+  <div lang="pt">
+    <p>
+      39 anos. Casado. Pai de 3 (quase 4).
+    </p>
+    <p>
+      Engenheiro de Computação (POLI-USP, 2005), atualmente cursando Licenciatura em Matemática (UNIVESP)
+    </p>
+
+  </div>
+  <p lang="en">
+    placeholder
   </p>
+
+
+  <script type="text/javascript">
+    page_lang = getParameterByName('lang');
+    if (page_lang == null) page_lang = 'pt';
+    document.body.className=page_lang;
+  </script>
   </body>
 </html>
