@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
     <style type="text/css">
         body.pt :lang(en) {
           display: none;
@@ -28,32 +34,69 @@
 
     <title>Henrique Soejima</title>
   </head>
-  <body>
-  <button lang="pt" onclick="document.body.className='en'">Switch to English</button>
-  <button lang="en" onclick="document.body.className='pt'">Em Português</button>
-  <h1>Henrique Tatsuyuki Soejima</h1>
-  <p>
-    <a href="http://www.deltahumano.com.br" alt="Delta Humano - Apenas mais um tentando fazer a diferença..."><img src="img/delta-humano-logo.png" height="50" /></a>
-    &nbsp;<a href="https://www.linkedin.com/in/soejima/" alt="LinkedIn"><img src="img/linkedin.png" height="50" /></a>
-    &nbsp;<a href="https://www.twitter.com/soejima" alt="Twitter"><img src="img/twitter.png" height="50" /></a>
-    &nbsp;<a href="https://www.facebook.com/soejima" alt="Facebook"><img src="img/facebook.png" height="50" /></a>
-    &nbsp;<a href="https://www.youtube.com/htsoejima" alt="YouTube"><img src="img/youtube.png" height="50" /></a>
-    &nbsp;<a href="https://www.github.com/soejima" alt="GitHub"><img src="img/github.png" height="50" /></a>
-  </p>
+  <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-  <div lang="pt">
-    <p>
-      39 anos. Casado. Pai de 3 (quase 4).
-    </p>
-    <p>
-      Engenheiro de Computação (POLI-USP, 2005), atualmente cursando Licenciatura em Matemática (UNIVESP)
-    </p>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Henrique Tatsuyuki Soejima</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a lang="en" class="page-scroll" href="#about">About</a>
+                    <a lang="pt" class="page-scroll" href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a lang="en" class="page-scroll" href="#education">Education</a>
+                    <a lang="pt" class="page-scroll" href="#education">Educação</a>
+                </li>
+                <li>
+                    <a lang="en" class="page-scroll" href="#experiences">Experience</a>
+                    <a lang="pt" class="page-scroll" href="#experiences">Experiência</a>
+                </li>
+                <li>
+                    <a lang="pt" class="page-scroll" onclick="document.body.className='en'">[ Switch to English ]</a>
+                    <a lang="en" class="page-scroll" onclick="document.body.className='pt'">[ Mudar para Português ]</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
 
-  </div>
-  <p lang="en">
-    placeholder
-  </p>
+        <p>
+          <a href="http://www.deltahumano.com.br" alt="Delta Humano - Apenas mais um tentando fazer a diferença..."><img src="img/delta-humano-logo.png" height="50" /></a>
+          &nbsp;<a href="https://www.linkedin.com/in/soejima/" alt="LinkedIn"><img src="img/linkedin.png" height="50" /></a>
+          &nbsp;<a href="https://www.twitter.com/soejima" alt="Twitter"><img src="img/twitter.png" height="50" /></a>
+          &nbsp;<a href="https://www.facebook.com/soejima" alt="Facebook"><img src="img/facebook.png" height="50" /></a>
+          &nbsp;<a href="https://www.youtube.com/htsoejima" alt="YouTube"><img src="img/youtube.png" height="50" /></a>
+          &nbsp;<a href="https://www.github.com/soejima" alt="GitHub"><img src="img/github.png" height="50" /></a>
+        </p>
 
+        <div lang="pt">
+          <p>
+            39 anos. Casado. Pai de 3 (quase 4).
+          </p>
+          <p>
+            Engenheiro de Computação (POLI-USP, 2005), atualmente cursando Licenciatura em Matemática (UNIVESP)
+          </p>
+
+        </div>
+        <p lang="en">
+          placeholder
+        </p>
+
+      </div>
 
   <script type="text/javascript">
     page_lang = getParameterByName('lang');
