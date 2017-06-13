@@ -20,18 +20,6 @@
         }
     </style>
 
-    <script type="text/javascript">
-      function getParameterByName(name, url) {
-          if (!url) url = window.location.href;
-          name = name.replace(/[\[\]]/g, "\\$&");
-          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-              results = regex.exec(url);
-          if (!results) return null;
-          if (!results[2]) return '';
-          return decodeURIComponent(results[2].replace(/\+/g, " "));
-      }
-    </script>
-
     <title>Henrique Soejima</title>
   </head>
   <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -117,8 +105,9 @@
       </div>
 
       <script type="text/javascript">
-        page_lang = getParameterByName('lang');
-        if (page_lang == null) page_lang = 'pt';
+        page_lang = window.navigator.language.substr(0,2);
+        if (page_lang != 'pt')
+          page_lang = 'en';
         document.body.className=page_lang;
       </script>
 
