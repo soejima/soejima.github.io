@@ -14,6 +14,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/js/script.js" ></script>
     <title>Aniversário de 8 anos do Guilherme e do Gabriel!!!</title>
+    <style>
+        #map {
+          width: 100%;
+          height: 400px;
+          background-color: grey;
+        }
+    </style>
 </head>
 <body>
 <!-- div used to make the body blur -->
@@ -30,8 +37,9 @@
                     <div id="mySidenav" class="sidenav text-center">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
                         <a href="index.html">Início</a><hr>
-                        <a href="generic.html">Generic</a><hr>
-                        <a href="element.html">Element</a>              
+                        <a href="#jornada">A Jornada</a><hr>
+                        <a href="#presente">Presentes</a><hr>
+                        <a href="#onde">Onde será?</a>              
                     </div>
                     <div class="main" id="main">
                       <a href="#" onclick="openNav()">MENU &#9776;</a>
@@ -45,13 +53,13 @@
           <div class="container">
             <div class="row">
                <div class="wow-logo">
-                  <img class="img-responsive img-logo" src="assets/img/wow_logo.png">
+                  <img class="img-responsive img-logo" src="assets/img/Biel e Gui.jpg">
                </div> 
                <div class="font-1 helmet text-center">
                  <p>Que tal comemorarmos juntos a chegada dos 8 anos do <strong>Guilherme</strong> e do <strong>Gabriel</strong>.</p>
                </div>
                <div class="wow-btn text-center">
-                     <a class="btn btn-default wow-button" href="#">Vamos lá!!!</a>
+                     <a class="btn btn-default wow-button" href="#onde">Vamos lá!!!</a>
                </div>
             </div>
           </div>
@@ -60,7 +68,7 @@
  
     <section class="index-part-2">
          <div class="container">
-
+            <a id="jornada"></a>
             <div class="row">
                <div class="text-center">
                  <h2>A Jornada</h2>
@@ -89,7 +97,7 @@
                              <div class="icon">
                                   <i class="fa fa-camera fa-2x"></i>
                              </div>  
-                              <h4>Nós seremos os fotógrafos</h4>
+                              <h4>Os fotógrafos somos nozes</h4>
                               <p class="font-2">Não haverá uma equipe dedicada, então toda foto compartilhada será bem-vinda!</p>                                       
                       </div>
                 </div>
@@ -101,23 +109,24 @@
                                  <div class="icon">
                                      <i class="fa fa-eye fa-2x"></i>
                                  </div>  
-                                   <h4>Monitores estarão a postos</h4>
-                                   <p class="font-2">A festa é das crianças e tudo está sendo preparado para elas curtirem muito.</p>
+                                   <h4>Monitores e diversão</h4>
+                                   <p class="font-2">Que as crianças tenham uma experiência incrível juntas!</p>
                     </div>   
                 </div>
                 <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
                     <div class="block text-center block-last">
                             <div class="icon">
-                                 <i class="fa fa-heart fa-2x"></i>
+                                 <i class="fa fa-birthday-cake fa-2x"></i>
                             </div>  
-                            <h4>Música e brincadeiras</h4>
-                            <p class="font-2">Um momento de celebração e bate-papo, entre pessoas queridas.</p>                                        
+                            <h4>Bolo com a turma</h4>
+                            <p class="font-2">Primeira vez deste momento entre amig@s! Momento muito especial!</p>                                        
                       </div>
                     </div>
                 </div>
             </div>
     </section>
 
+    <a id="onde"></a>
     <section class="index-part-3">
         <div class="container">
                 <div class="row why-div">
@@ -129,9 +138,17 @@
                              <p class="font-1">
                                 No Buffet Além D'Alegria Prime, na Rua Caçaquera, 309. (menos de 1 km de distância do Marupiara)
                              </p>
+                             <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Buffet%20Al%C3%A9m%20D'Alegria%20Prime&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webdesign agentur</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>   
                        </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12">
+                            
+                    </div>
+                </div>
+       
+<!--
                 <div class="row">
                     <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12">
                      <div class="holder-para">
@@ -189,12 +206,13 @@
                             </div>
                     </div>
                 </div>
-        </div>
+-->
+      </div>
     </section>
                 
     <section class="index-part-4">
          <div class="container">
-                
+              <a id="presente"></a>
                 <div class="row">
                        <div class="text-center">
                          <h2>Opção de presente coletivo.</h2>
