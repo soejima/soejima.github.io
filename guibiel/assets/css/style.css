@@ -366,7 +366,15 @@ i.fa-heart{
      padding-left:0px;padding-right:0px;
 }
 
-/* input, */
+
+ input{
+   width: 200px;
+   font-family: 'Lora', serif;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+   margin-bottom: 30px;
+}
 select,textarea{
      width: 100%;
     border:1px solid black;
